@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">PLease tell us your experience on Freecodecamp.</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label><br>
+        <input id="name" type="text" required name="Name" placeholder="Enter your Name"><br>
+        <label for="email" id="email-label">Email Address</label><br>
+        <input id="email" type="email" placeholder="Enter your Email Address" required name="Email"><br>
+        <label for="number" id="number-label">Age</label><br>
+        <input id="number" type="number" name="Number" max="50" min="16" placeholder="Enter your Age"><br>
+        <label for="dropdown" id="dropdown-label">How was your Experience</label>
+        <select id="dropdown" name="Dropdown">
+            <option value="satisfied"> Satisfied</option>
+            <option value="dont know"> Dont Know</option>
+            <option value="unsatisfied"> Not Satisfied</option>
+        </select>
+        <p>Was the website helpful</p><br>
+        <input type="radio" id="yes-radio" value="Yes" name="Yes-radio" checked>
+        <label for="yes-radio">Yes</label><br> 
+        <input type="radio" id="no-radio" value="No" name="No-radio">
+        <label for="no-radio">No</label><br> 
+        <p>Would you like any thing to be changed</p>
+        <input type="checkbox" id="video" name="Videos" value="Videos">
+        <label for="video"> Videos</label><br>
+        <input type="checkbox" id="content" name="Content" value="Content">
+        <label for="content"> Content</label><br>
+        <p>Any comments</p><br>
+        <textarea id="comment" name="Comment" placeholder="Enter your comments here"></textarea><br>
+        <input type="submit" value="Submit" id="submit">
+
+
+    </form>
+
+</body>
+</html>
